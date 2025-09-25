@@ -1,0 +1,9 @@
+beam_shaping.egg-info
+beam_shaping.egg-info/*
+
+__pycache__
+*/__pycache__
+*/__pycache__/*
+
+*.pyc
+**/*.pyc

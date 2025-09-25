@@ -1,0 +1,270 @@
+data:
+  nu_cooler_imaging:
+    label: Imaging frequency
+    units: Γ
+    form: 'lambda f : (f+1) / 6.07'
+  nu_cooler_imaging_candidate:
+    label: Imaging frequency
+    units: Γ
+    form: 'lambda f : (f+1) / 6.07'
+  pgc_imaging_mixer_cooler_eff_candidate:
+    label: Imaging cooler power
+    units: fraction
+    form: 'lambda f : f'
+  pgc_imaging_mixer_repumper_eff_candidate:
+    label: Imaging repumper power
+    units: fraction
+    form: 'lambda f : f * 0.0837'
+  pgc_imaging_mixer_repumper_eff_candidate_09:
+    label: Imaging repumper power
+    units: fraction
+    form: 'lambda f : f * 0.0095'
+  nu_pushout_2_2_prime:
+    label: "Pushout delta from 2-2'"
+    units: Γ
+    form: 'lambda f : (f+266.65) / 6.07'
+  nu_pushout_2_3_prime:
+    label: "Pushout delta from 2-3'"
+    units: Γ
+    form: 'lambda f : (f + 1) / 6.07'
+  nu_pushout_2_3_prime_molasses:
+    label: "Pushout molasses delta from 2-3'"
+    units: Γ
+    form: 'lambda f : (f + 1) / 6.07'
+  loading_time:
+    label: Loading time
+    units: ms
+    form: 'lambda f : f * 1e3'
+  dissipate_time:
+    label: Mot dissipation time
+    units: ms
+    form: 'lambda f : f * 1e3'
+  nu_cooler_molasse:
+    label: OM cooler detuning
+    units: Γ
+    form: 'lambda f : (f+1) / 6.07'
+  cc_1_default:
+    label: CC1 value
+    units: mV
+    form: 'lambda f : f *1000'
+  cc_2_default:
+    label: CC3_A value
+    units: mV
+    form: 'lambda f : f *1000'
+  cc_3_default:
+    label: CC3_B value
+    units: mV
+    form: 'lambda f : f *1000'
+  cc_1_molasses:
+    label: CC1 molasses value
+    units: mV
+    form: 'lambda f : f *1000'
+  cc_1_candidate:
+    label: CC1 candidate
+    units: mV
+    form: 'lambda f : f *1000'
+  cc_2_molasses:
+    label: CC3_A molasses value
+    units: mV
+    form: 'lambda f : f *1000'
+  cc_2_candidate:
+    label: CC2 candidate
+    units: mV
+    form: 'lambda f : f *1000'
+  cc_3_molasses:
+    label: CC3_B molasses value
+    units: mV
+    form: 'lambda f : f *1000'
+  cc_1_candidate:
+    label: CC1 candidate
+    units: mV
+    form: 'lambda f : f * 1000'
+  delay_before_imaging_time:
+    label: Delay before first image
+    units: ms
+    form: 'lambda f : f * 1000'
+  mixer_cooler_3D_MOT_eff:
+    label: Effective cooler power
+    units: fraction
+    form: 'lambda f : f'
+  
+  emccd_exposure_time_candidate:
+    label: Imaging time
+    units: ms
+    form: 'lambda f : f *1000'
+    
+  final_value:
+    label: "Nominal ramping ratio"
+    units: $U_f / U_i$
+    form: 'lambda f : f / 4.830'
+  repumper_delay_time_before_cooler:
+    label: Delay between Cool and Rep
+    units: ms
+    form: 'lambda f : f * 1e3'
+  cooler_delay_time_before_repumper:
+    label: Delay between Rep and Cool
+    units: ms
+    form: 'lambda f : f * 1e3'
+  IQ_mixer_frequency:
+    label: IQ mixer frequency
+    units: MHz
+    form: 'lambda f : f*1e-6'
+
+  IQMixer_block_1_ch_0:
+    label: IQ mixer frequency
+    units: MHz
+    form: 'lambda f : f*1e-6'
+
+  IQMixer_block_1_ch_1:
+    label: IQ mixer frequency
+    units: MHz
+    form: 'lambda f : f*1e-6'
+  mw_pulse_duration:
+    label: MW pulse duration
+    units: μs
+    form: 'lambda f : f*1e6'
+
+  tau:
+    label: Time
+    units: μs
+    form: 'lambda f : f*1e6'
+  t_delay:
+    label: $\tau delay$
+    units: μs
+    form: 'lambda f : f*1e6'
+  fine_OP_duration:
+    label: $\tau_{OP}$
+    units: ms
+    form: 'lambda f : f*1e3'
+  pgc_OP_fine_mixer_cooler_eff:
+    label: OP cooler power
+    units: fraction
+    form: 'lambda f : f'
+  nu_cooler_fine_OP:
+    label: "OP delta from 2-3'"
+    units: Γ
+    form: 'lambda f : (f+1) / 6.07'
+  pgc_OP_fine_mixer_repumper_eff:
+    label: "OP repumper power"
+    units: fraction
+    form: 'lambda f : f'
+  cc_1_for_OP:
+    label: "CC1 during fine OP"
+    units: mV
+    form: 'lambda f : f * 1000'
+  cc_2_for_OP:
+    label: "CC2 during fine OP"
+    units: mV
+    form: 'lambda f : f * 1000'
+  cc_3_for_OP:
+    label: "CC3 during fine OP"
+    units: mV
+    form: 'lambda f : f * 1000'
+  trapping_min_voltage:
+    label: "Ramp extinction ratio"
+    units: $U_m/U_0$
+    form: 'lambda f : f / common_globals["trapping_max_voltage"]'
+  pgc_cooling_mixer_cooler_eff:
+    label: "Cooling cooler power"
+    units: '0-1'
+    form: 'lambda f : f'
+  cooling_time_gap:
+    label: "Cooling time"
+    units: ms
+    form: 'lambda f : f * 1e3'
+  imaging_time_gap:
+    label: "Gap time"
+    units: ms
+    form: 'lambda f : f * 1e3'
+  clo_ramp_ratio:
+    label: '$U_i/U_0$'
+    units: fraction
+    form: 'lambda f : f'  
+  mixer_pushout_value_eff:
+    label: "Pushout cooler power"
+    units: '0-1'
+    form: 'lambda f : f'
+  pushout_time:
+    label: Pushout duration
+    units: μs
+    form: 'lambda f : f * 1e6'
+  gc_1_default:
+    label: GC current
+    units: A
+    form: 'lambda f : f *0.4'
+  gc_2_default:
+    label: GC2 value
+    units: mV
+    form: 'lambda f : f *1000'
+  gc_1_molasses:
+    label: GC current
+    units: A
+    form: 'lambda f : f *0.4'
+  gc_2_molasses:
+    label: GC2 molasses value
+    units: mV
+    form: 'lambda f : f *1000'
+  nu_cooler_2DMOT:
+    label: "Detuning cooler 3D MOT"
+    units: Γ
+    form: 'lambda f : (f+1) / 6.07'
+  cc2_current_source_bias:
+    label: "CC2 current source bias"
+    units: V
+    form: 'lambda f : f'
+  cc2_current_source_MOT:
+    label: "CC2 current (MOT)"
+    units: mA
+    form: 'lambda f : f*500/10'
+  cc2_current_source_PGC:
+    label: "CC2 current (OM)"
+    units: mA
+    form: 'lambda f : f*500/10'
+  nu_cooler_cooling:
+    label: "Cooler frequency"
+    units: Γ
+    form: 'lambda f : (f+1) / 6.07'
+  cc_x_MOT:
+    label: "V_in_CCx value (MOT)"
+    units: V
+    form: 'lambda f : f' 
+  cc_y_1_MOT:
+    label: "V_in_CCy1 value (MOT)"
+    units: V
+    form: 'lambda f : f'
+  cc_z_1_MOT:
+    label: "V_in_CCz1 value (MOT)"
+    units: V
+    form: 'lambda f : f'
+  delay_before_loading_MOT:
+    label: "Delay between TTL and loading MOT"
+    units: ms
+    form: 'lambda f : f * 1e3'
+  cc_x_PGC:
+    label: "V_in_CCx value (PGC)"
+    units: V
+    form: 'lambda f : f'
+  cc_y_1_PGC:
+    label: "V_in_CCy_1 value (PGC)"
+    units: V
+    form: 'lambda f : f'
+  cc_z_1_PGC:
+    label: "V_in_CCz_1 value (PGC)"
+    units: V
+    form: 'lambda f : f'
+  pgc_molasse_cooling_time:
+    label: "Cooling time (PGC)"
+    units: ms
+    form: 'lambda f : f*1e3'
+  pgc_molasses_mixer_cooler_eff:
+    label: PGC cooler power
+    units: fraction
+    form: 'lambda f : f'
+  pgc_in_traps_mixer_cooler_eff:
+    label: PGC in traps cooler power
+    units: fraction
+    form: 'lambda f : f'
+  pgc_in_traps_mixer_repumper_eff:
+    label: 3DMOT rep power for PGC
+    units: fraction
+    form: 'lambda f : f'
